@@ -3,7 +3,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/gleewhois)](https://hex.pm/packages/gleewhois)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleewhois/)
 
-WHOIS client for Gleam.
+WHOIS client for Gleam built using [mug🍺](https://github.com/lpil/mug). Programmatically query WHOIS servers from Gleam or use it from the command line, if for whatever reason you desire that.
 
 ## Use it to query from the CLI
 
