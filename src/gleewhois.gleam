@@ -6,6 +6,7 @@ import gleam/io
 import glint
 import mug.{type Error, type Socket}
 
+/// Error types returned from `query`.
 pub type Err {
   SocketError
   ParsingError
@@ -59,6 +60,7 @@ fn timeout_flag() -> glint.Flag(Int) {
   )
 }
 
+/// Entrypoint for running CLI program.
 pub fn main() {
   glint.new()
   |> glint.with_name("whois")
