@@ -1,29 +1,29 @@
-# gleam_whois
+# gleewhois
 
-[![Package Version](https://img.shields.io/hexpm/v/gleam_whois)](https://hex.pm/packages/gleam_whois)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleam_whois/)
+[![Package Version](https://img.shields.io/hexpm/v/gleewhois)](https://hex.pm/packages/gleewhois)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleewhois/)
 
-WHOIS for gleam.
+WHOIS client for Gleam.
 
 ## Use it to query from the CLI
 
 ```sh
-~/gleam_whois$ gleam run -- --server=whois.ripe.net --port=43 AS51019
+~/gleewhois$ gleam run -- --server=whois.ripe.net --port=43 AS51019
 ```
 
 ## Or use it in your code
 
 ```sh
-gleam add gleam_whois
+gleam add gleewhois
 ```
 
 ```gleam
 import gleam/io
-import gleam_whois.{ParsingError, SocketError, UnknownError}
+import gleewhois.{ParsingError, SocketError, UnknownError}
 
 pub fn main() {
   let query =
-    gleam_whois.query(
+    gleewhois.query(
       "AS51019",
       server: "whois.ripe.net",
       port: 43,
@@ -43,7 +43,7 @@ pub fn main() {
 }
 ```
 
-Documentation also available at <https://hexdocs.pm/gleam_whois>.
+Documentation also available at <https://hexdocs.pm/gleewhois>.
 
 ## License
 
